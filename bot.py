@@ -4,6 +4,8 @@ import asyncio
 import logging
 import sqlite3
 import aiohttp
+import os
+from dotenv import load_dotenv
 
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
