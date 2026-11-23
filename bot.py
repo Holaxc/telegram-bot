@@ -18,9 +18,11 @@ from aiogram.types import (
 )
 
 # --- НАСТРОЙКИ ---
-TOKEN = ""
-ADMIN_ID = 1832950996
-GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_zUV_ZinG2IKrZEc_QQC3z6sE2NRj72e3zO31aB5lF4UURrQkxq_YvADNH7m-wQgv/exec"
+load_dotenv()
+
+TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
+GOOGLE_SCRIPT_URL = os.getenv("GOOGLE_SCRIPT_URL")
 
 
 # --- БАЗА ДАННЫХ ---
